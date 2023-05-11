@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logic LAB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="gene">
+            <div class="input">
+                <div class="box">
+                    <input type="text" id="expression" onchange="convertExpression();" autofocus autocomplete="on" />
+                    <span>Hit Enter !</span>
+                </div>
+                <div class="explain">
+                    <p>valid signs <span>! ,not</span>,<span>&&,*,and</span>,<span>||,+,or</span> you can use them all in one expression example <span>!(a) * !(b) || (c) and (d)</span> </p>
+                </div>
+            </div>
+            <div class="table">
+                <table id="truthTable"></table>
+            </div>
+        </div>
+        <div class="rights">
+            <p>Made By <a target="_blank" href="https://github.com/MohamedAboSeada">[Mohamed Abo seada]</a>.<a target="_blank" href="https://github.com/MohamedAboSeada/TruthTableGenerator.git">[source code]</a></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
