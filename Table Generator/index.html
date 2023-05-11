@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <div class="msg" id="msg">
+        <p><i class="fa-regular fa-copy"></i>copied !</p>
+    </div>
     <div class="main">
         <div class="gene">
             <div class="input">
@@ -17,9 +20,17 @@
                     <p>valid signs <span>! ,not</span>,<span>&&,*,and</span>,<span>||,+,or</span> you can use them all in one expression example <span>!(a) * !(b) || (c) and (d)</span> </p>
                 </div>
             </div>
+            <div class="buttons" id="btns"> 
+                <button id="possop" onclick="generateExpressions()">Generate SOP and POS</button>
+                <button id="copy" onclick="copyTable()"><i class="fa-regular fa-copy"></i></button>
+            </div>
             <div class="table">
                 <table id="truthTable"></table>
             </div>
+            <div id="expressionsBox">
+            
+            </div>
+
         </div>
         <div class="rights">
             <p>Made By <a target="_blank" href="https://github.com/MohamedAboSeada">[Mohamed Abo seada]</a>.<a target="_blank" href="https://github.com/MohamedAboSeada/TruthTableGenerator.git">[source code]</a></p>
